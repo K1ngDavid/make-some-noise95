@@ -1,47 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Rubik+Mono+One&display=swap');
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 1000px;
-    height: 600px;
-    align-content: center;
-    border-radius: 2%;
-}
 
-.arrow{
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
 
-}
 
-h1{
-    text-align: center;
-    margin: 50px;
+body{
+    background-image: linear-gradient(#ff9a9e, #fad0c4);
+    margin: 0;
+    padding: 0;
     font-family: 'IBM Plex Sans';
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
-}
-
 nav{
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid #6f6f6f;
+    border-bottom: 5px  black;
 }
 
 nav .onglets{
     margin-top: 3px;
-    margin-left: 300px;
+    margin-left: 1200px;
 }
 
 nav .onglets a{
@@ -51,19 +31,86 @@ nav .onglets a{
     border-bottom: 1px solid black;
 }
 
-.hello{
-    color: aqua;
-}
 
 header{
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("shoes.jpg");
-    background-size: cover;
     color: white;
-    padding-bottom: 1000px;
+    margin-top: 40px;
 }
+
+header h1{
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}
+
+.main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.main .content .card{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.main .content .card .right img{
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+.main .content .card .left{
+    flex: 0 0 30%;
+    background-color: black;
+    border-radius: 5%;
+    border: 1px  black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+    margin-right: 20px;
+    padding: 20% 10%;
+}
+
+.main .content .card .left h1{
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.main .content .card.right{
+    flex: 0 0 80%;
+}
+
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: black;
+    color: white;
+    padding: 30px 100px;
+}
+
+footer p{
+    font-size: 30px;
+}
+
+footer h1{
+    border-bottom: 1px solid white;
+    width: 20%;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
 
 @media screen and (max-width: 680px){
     nav .onglets{
