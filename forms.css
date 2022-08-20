@@ -11,17 +11,16 @@ body{
 }
 
 nav{
-    margin-top: 30px;
+    background: inherit;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 5px  black;
 }
 
 nav .onglets{
-    margin-top: 3px;
-    margin-left: 1200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav .onglets a{
@@ -68,7 +67,7 @@ header h1{
     justify-content:center;
     display:flex;
     flex-wrap : wrap;
-    flex-direction: row;
+    flex-direction: column;
     gap : 2rem;
     height: 100%;
 
@@ -86,8 +85,6 @@ header h1{
     justify-content: center;
     align-items: center;
     line-height: 0;
-    height: 250px;
-    width: 300px;
 }
 
 
@@ -122,9 +119,9 @@ footer h1{
 }
 
 
-@media screen and (max-width: 680px){
+@media screen and (max-width:  980px){
     nav .onglets{
+        margin-top: 3px;
         margin-left: 0px;
-        margin-bottom: 20px;
     }
 }
