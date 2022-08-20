@@ -90,8 +90,8 @@ header h1{
 
 
 .main .card .image img{
-    height: 250px;
-    width: 300px;
+    height: 40%;
+    width: 0%;
     border-radius: 5%;
 }
 
@@ -119,9 +119,19 @@ footer h1{
 }
 
 
-@media screen and (max-width:  980px){
+@media screen and (max-width:  680px){
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     nav .onglets{
-        margin-top: 3px;
+        margin-bottom: 3px;
         margin-left: 0px;
+        flex-wrap: wrap;
+    }
+    nav .onglets a {
+        display: block;
+        margin-left:10px;
     }
 }
